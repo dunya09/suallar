@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import TriviaGame from './TriviaGame';  // TriviaGame komponentini daxil et
+import './styles.css';  // Stil faylını daxil et
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1 className="app-title">Kim Milyoner Olmaq İstər?</h1>
+      <TriviaGame />  {/* TriviaGame komponentini buraya daxil edirik */}
     </div>
   );
 }
 
 export default App;
+
+
